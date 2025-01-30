@@ -11,7 +11,7 @@ import sys
 import setuptools
 # import git
 
-repo = git.Repo(search_parent_directories=True)
+# repo = git.Repo(search_parent_directories=True)
 date=datetime.datetime.utcnow()
 
 # with open("README.md", "r") as fh:
