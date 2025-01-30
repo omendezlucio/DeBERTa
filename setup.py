@@ -9,14 +9,14 @@ import sys
 # install('gitpython')
 
 import setuptools
-import git
+# import git
 
 repo = git.Repo(search_parent_directories=True)
 date=datetime.datetime.utcnow()
 
-with open("README.md", "r") as fh:
-  long_description = fh.read() + f'\n git version: {repo.head.object.hexsha}' + \
-  f'\n date: {date}'
+# with open("README.md", "r") as fh:
+#   long_description = fh.read() + f'\n git version: {repo.head.object.hexsha}' + \
+#   f'\n date: {date}'
 
 with open('VERSION') as fs:
     version = fs.readline().strip()
@@ -36,7 +36,7 @@ setuptools.setup(
     description="Decoding enhanced BERT with Disentangled Attention",
     keywords="NLP deep learning transformer pytorch Attention BERT RoBERTa DeBERTa",
     license="MIT",
-    long_description=long_description,
+#     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/microsoft/DeBERTa",
     packages=setuptools.find_packages(exclude=['__pycache__']),
