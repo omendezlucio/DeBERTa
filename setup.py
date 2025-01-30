@@ -2,11 +2,11 @@ import subprocess
 import datetime
 import sys
 
-def install(package):
-  subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+# def install(package):
+#   subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-install('setuptools')
-install('gitpython')
+# install('setuptools')
+# install('gitpython')
 
 import setuptools
 import git
